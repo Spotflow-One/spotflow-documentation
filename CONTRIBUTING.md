@@ -37,3 +37,4 @@ Our team reviews and merges pull requests regularly.
 If you have questions, reach out via our [Slack link](https://join.slack.com/t/spotflowdevel-cki6990/shared_invite/zt-3f9l7fv0n-zHmRJA~siUrC9VtEEcvVTQ).
 
 Thank you for helping make Spotflow better!
+
