@@ -36,3 +36,14 @@
     margin-block-end: 1rem;
   }
   
+
+ 
+#__docusaurus .pagination-nav__link:hover {
+    opacity: 0.9;                         /* Subtle fade */
+    transition: all 0.25s ease-out;       /* Smooth transition */
+    
+    /* UI Fixes: */
+    border-color: transparent !important;   
+    box-shadow: none !important;
+    transform: translateY(-1px);          /* Subtle lift for interaction */
+}
