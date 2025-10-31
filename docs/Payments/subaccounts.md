@@ -3,8 +3,7 @@ title: Sub Accounts
 hide_title: true
 id: sub-accounts
 ---
-
-import Admonitions from "../src/components/Admonition/Admonitions"
+import Admonitions from "../../src/components/Admonition/Admonitions"
 
 ## Sub Accounts
 Sub accounts are API-only financial containers that function as dedicated pockets where funds can be stored and managed independently. Unlike virtual accounts that simply route payments, sub accounts maintain their own balances and serve as genuine repositories for money within your account ecosystem.

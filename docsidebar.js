@@ -5,51 +5,37 @@ const sidebars = {
   [
     {
       type: 'doc',
-      id: 'home',
-      className: 'home'
+      id: 'welcome',
+      className: 'welcome'
     },
-    {
-      type: 'doc',
-      id: 'accepting-payment'
+
+     {
+      type: 'category',
+      label: 'Payments',
+      collapsed: false,
+      items: [
+        'Payments/accepting-payment',
+        'Payments/recurring-payment',
+        'Payments/currency-exchange',
+        'Payments/settlement',
+        'Payments/testing-payment',
+        'Payments/sub-accounts',
+        'Payments/virtual-accounts',
+        'Payments/transfer-apis'
+       
+      ]
     },
-    {
-      type: 'doc',
-      id: 'recurring-payment'
-    },
-    {
-      type: 'doc',
-      id: 'currency-exchange',
-    },
-    {
-      type: 'doc',
-      id: 'settlement'
-    },
-    {
-      type: 'doc',
-      id: 'testing-payment'
-    },
-    {
-      type: 'doc',
-      id: 'sub-accounts'
-    },
-    {
-      type: 'doc',
-      id: 'virtual-accounts'
-    },
-    {
-      type: 'doc',
-      id: 'transfer-apis'
-    },
+
     {
       type: 'category',
       label: 'Developer Tools',
       collapsed: false,
       items: [
-        "Developer Tools/overview",
-        "Developer Tools/ios-sdk",
-        "Developer Tools/android-sdk",
-        "Developer Tools/flutter-sdk",
-        "Developer Tools/inline-js"
+        "Developer-Tools/overview",
+        "Developer-Tools/ios-sdk",
+        "Developer-Tools/android-sdk",
+        "Developer-Tools/flutter-sdk",
+        "Developer-Tools/inline-js"
       ]
     },
     {

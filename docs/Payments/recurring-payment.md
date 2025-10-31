@@ -1,12 +1,16 @@
 ---
-title: Recurring Payment Collection
+title: Recurring Payment
 id: recurring-payment
 hide_title: true
 ---
-import Admonitions from "../src/components/Admonition/Admonitions"
+
+import Admonitions from "../../src/components/Admonition/Admonitions"
 
 
-## Recurring Payment Collection
+
+
+
+## Recurring Payment 
 
 
 Spotflow offers robust recurring payment capabilities to streamline your subscription-based business operations. This consists of two flexible methods for handling recurring payments:

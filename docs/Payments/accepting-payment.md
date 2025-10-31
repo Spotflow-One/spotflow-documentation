@@ -1,12 +1,12 @@
 ---
-title: Accepting Payment Collection
+title: Accepting Payment
 hide_title: true
 id: accepting-payment
 ---
 
-## Accepting Payment Collection
+## Accepting Payment
 
-import Admonitions from "../src/components/Admonition/Admonitions"
+import Admonitions from "../../src/components/Admonition/Admonitions"
 
 <!-- <div class="accepting-payment"> -->
 <!-- :::note[To summarize]

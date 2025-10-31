@@ -1,14 +1,14 @@
-@use './doc-root';
-@import url('./sidebar.scss');
-@import url('./pagination.scss');
-@import url('./markdown.scss');
-@import url('./doc-item.scss');
-@import url('./navbar_sidebar.scss');
-@import url('./theme_toggle.scss');
-@import url('./navbar.scss');
-@import url('./search.scss');
-@import url('./toc.scss');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@use "./doc-root";
+@import url("./sidebar.scss");
+@import url("./pagination.scss");
+@import url("./markdown.scss");
+@import url("./doc-item.scss");
+@import url("./navbar_sidebar.scss");
+@import url("./theme_toggle.scss");
+@import url("./navbar.scss");
+@import url("./search.scss");
+@import url("./toc.scss");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 /* @import url('./main.css'); */
 /* stylelint-disable docusaurus/copyright-header */
 /**
@@ -19,7 +19,6 @@
 
 /* You can override the default Infima variables here. */
 
-
 :root {
   --ifm-background-color: var(--token-primary-bg-c);
 
@@ -28,10 +27,12 @@
   --ifm-navbar-item-padding-vertical: 0;
   --search-local-modal-width: 420px;
 
-  --ifm-font-family-base: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI emoji';
-  --ifm-font-family-monospace: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --ifm-font-family-base: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
+    Inter, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI emoji";
+  --ifm-font-family-monospace: "SFMono-Regular", "Roboto Mono", Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
 
-  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
+  --ifm-menu-link-sublist-icon: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04Ljk5OTg4IDVMNC45OTk4OCAxTDAuOTk5ODc4IDUiIHN0cm9rZT0iIzAzMDYwQiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
 
   /* //#region ----------- Z Indices ------------ */
   --z-sidebar: 2000;
@@ -39,13 +40,13 @@
   /* //#endregion */
 }
 
-html[data-theme='light'] {
+html[data-theme="light"] {
   --token-primary-bg-c: #fff;
   --token-secondary-bg-c: #fff;
 
-  --ifm-link-color: #01008E;
+  --ifm-link-color: #01008e;
   /* //rgb value is c-blue-90 */
-  --ifm-link-hover-color: #01008E;
+  --ifm-link-hover-color: #01008e;
 
   --ifm-background-surface-color: var(--token-primary-bg-c);
 
@@ -59,18 +60,18 @@ html[data-theme='light'] {
   --ifm-font-color-base: var(--c-carbon-90);
 }
 
-html[data-theme='dark'] {
+html[data-theme="dark"] {
   --token-primary-bg-c: #03060b;
   --token-secondary-bg-c: #13171c;
 
   --ifm-link-color: #61618f;
   /* //rgb value is c-blue-70 */
-  --ifm-link-hover-color: #01008E;
+  --ifm-link-hover-color: #01008e;
 
   --ifm-background-surface-color: var(--token-primary-bg-c);
 
   --ifm-navbar-background-color: var(--token-primary-bg-c);
-  --ifm-navbar-shadow: #E4E8EE;
+  --ifm-navbar-shadow: #e4e8ee;
 
   --ifm-heading-color: #fff;
   --ifm-secondary-heading-color: #f6f6f6;
@@ -81,7 +82,7 @@ html[data-theme='dark'] {
 
   --ifm-menu-link-sublist-icon-filter: invert(100%);
   --search-local-modal-background: gray;
-  --search-local-hit-background:	gray;
+  --search-local-hit-background: gray;
 }
 
 html {
@@ -170,25 +171,33 @@ iframe {
   margin: 1rem 0 0;
 }
 
-[class*='announcementBar_'] {
+[class*="announcementBar_"] {
   --docusaurus-announcement-bar-height: 3.5rem;
 
-  background: linear-gradient(90deg, #440f14, #5e1219 15%, #000 35%, #000 45%, #5e1219 85%, #440f14);
+  background: linear-gradient(
+    90deg,
+    #440f14,
+    #5e1219 15%,
+    #000 35%,
+    #000 45%,
+    #5e1219 85%,
+    #440f14
+  );
 }
 
-[class*='announcementBar_']:hover,
-[class*='announcementBar_']:focus,
-[class*='announcementBar_']:active {
+[class*="announcementBar_"]:hover,
+[class*="announcementBar_"]:focus,
+[class*="announcementBar_"]:active {
   strong {
     color: var(--c-red-50);
   }
 }
 
-[class*='announcementBarContent_'] {
+[class*="announcementBarContent_"] {
   padding: 0;
 }
 
-[class*='announcementBarContent_'] > a {
+[class*="announcementBarContent_"] > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +212,7 @@ iframe {
   font-weight: 500;
 }
 
-[class*='announcementBarContent_'] > a strong {
+[class*="announcementBarContent_"] > a strong {
   font-weight: 500;
   color: var(--c-red-70);
   transition: color 0.2s ease-out;
@@ -222,25 +231,26 @@ iframe {
 //   margin-bottom: 20px;
 // }
 
-.searchBar_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module.searchBarLeft_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module .dropdownMenu_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module{
+.searchBar_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module.searchBarLeft_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module
+  .dropdownMenu_node_modules-\@easyops-cn-docusaurus-search-local-dist-client-client-theme-SearchBar-SearchBar-module {
   left: 0 !important;
   right: auto !important;
 }
-.searchBar_RVTs.searchBarLeft_MXDe .dropdownMenu_qbY6{
+.searchBar_RVTs.searchBarLeft_MXDe .dropdownMenu_qbY6 {
   width: 100%;
   left: 0 !important;
   right: auto !important;
 }
 
-.accepting-payment{
-  padding-right: 300px
+.accepting-payment {
+  padding-right: 300px;
 }
 
 .breadcrumbs {
   display: none;
 }
 
-.doclogo{
+.doclogo {
   margin-top: 20px;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -252,22 +262,40 @@ iframe {
 // }
 
 @media (max-width: 996px) {
-  #__docusaurus .navbar__items--right [class*='toggle_']{
+  #__docusaurus .navbar__items--right [class*="toggle_"] {
     display: none;
   }
 }
 
-
-.navbar__items--mid{
+.navbar__items--mid {
   display: flex;
   align-items: center;
 }
 
-.navbar__search-input{
-  width: 335px;
+.navbar__search-input {
+  width: 240px !important;
   border-radius: 8px;
-  height: 56px;
+  height: 40px !important;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+
   @media (max-width: 480px) {
     width: 100%;
   }
+}
+
+// Dark mode search styling
+html[data-theme="dark"] .navbar__search-input {
+  background-color: #03060b !important;
+  border: 2px solid #333 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .navbar__search-input::placeholder {
+  color: #888 !important;
+}
+
+.navbar__search {
+  margin-right: 16px !important;
 }

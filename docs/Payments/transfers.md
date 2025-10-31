@@ -4,7 +4,7 @@ hide_title: true
 id: transfer-apis
 ---
 
-import Admonitions from "../src/components/Admonition/Admonitions"
+import Admonitions from "../../src/components/Admonition/Admonitions"
 
 ## Transfer APIs
 With our APIs, initiating transfers is simple and seamless. We uphold strict security and compliance standards to ensure every transaction is processed safely and responsibly.
