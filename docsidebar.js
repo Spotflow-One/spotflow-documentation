@@ -31,11 +31,11 @@ const sidebars = {
       label: 'Developer Tools',
       collapsed: false,
       items: [
-        "Developer Tools/overview",
-        "Developer Tools/ios-sdk",
-        "Developer Tools/android-sdk",
-        "Developer Tools/flutter-sdk",
-        "Developer Tools/inline-js"
+        "Developer-Tools/overview",
+        "Developer-Tools/ios-sdk",
+        "Developer-Tools/android-sdk",
+        "Developer-Tools/flutter-sdk",
+        "Developer-Tools/inline-js"
       ]
     },
     {

@@ -144,3 +144,40 @@ html[data-theme='dark'] {
     }
   }
 }
+
+
+
+.markdown code:not(pre code) {
+    border-radius: 4px;
+    padding: 2px 4px;
+    /* THOUGHTFUL FIX: Subtle border for clearer distinction */
+    border: 1px solid var(--ifm-color-emphasis-200); 
+    background: var(--ifm-background-color); 
+}
+
+/* 2. Code Blocks: Softer corners, Border instead of heavy Shadow, and Hover effect */
+.markdown pre {
+    border-radius: 10px; /* Softer, larger radius */
+    /* THOUGHTFUL FIX: Clean border replacing heavy shadow for minimalist look */
+    border: 1px solid var(--ifm-color-emphasis-300); 
+    overflow: hidden; 
+    
+    /* Smooth Transition for hover effects */
+    transition: all 0.3s ease-out; 
+    
+    /* UX Enhancement: Subtle interaction on hover */
+    &:hover {
+        border-color: var(--ifm-color-primary); /* Border highlight on hover */
+        transform: translateY(-2px); /* Gentle lift effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Very light shadow only on hover */
+    }
+}
+
+/* THOUGHTFUL FIX: Dark Mode Optimization for border visibility */
+html[data-theme='dark'] .markdown pre {
+    border-color: var(--ifm-color-emphasis-800); 
+    
+    &:hover {
+        border-color: var(--ifm-color-primary-light);
+    }
+}
